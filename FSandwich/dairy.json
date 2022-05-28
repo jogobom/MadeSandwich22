@@ -1,0 +1,17 @@
+[
+    {"Name":"Grated Cheese", "PriceInPence":50},
+    {"Name":"Cottage Cheese", "PriceInPence":50},
+    {"Name":"Cream Cheese", "PriceInPence":50},
+    {"Name":"Egg Mayo", "PriceInPence":60},
+    {"Name":"Sliced Egg", "PriceInPence":50},
+    {"Name":"Cheese Savoury", "PriceInPence":60},
+    {"Name":"Mature Cheddar", "PriceInPence":70},
+    {"Name":"Feta", "PriceInPence":60},
+    {"Name":"Brie", "PriceInPence":60},
+    {"Name":"Mozzarella", "PriceInPence":60},
+    {"Name":"Goats Cheese", "PriceInPence":70},
+    {"Name":"Emmental", "PriceInPence":70},
+    {"Name":"Smoked Cheddar", "PriceInPence":70},
+    {"Name":"Stilton", "PriceInPence":70},
+    {"Name":"Parmesan", "PriceInPence":70}
+]

@@ -7,11 +7,11 @@ namespace jogobom.MadeSandwich
     {
         private static readonly string[] PossibleIntros = {"Sotd.", "Sotd:", "Sotd", "SOTD", "SOTD:", "SOTD."};
 
-        public static string Build(Sandwich sandwich)
+        public static string Build(string description, int priceInPence)
         {
             var specificCulture = CultureInfo.CreateSpecificCulture("en-GB");
 
-            return $"{GetRandomIntro()} {sandwich.ContentDescription} {sandwich.BreadAdvice} {sandwich.Price.ToString("C", specificCulture)}";
+            return $"{GetRandomIntro()} {description} {priceInPence.ToString("C", specificCulture)}";
         }
 
         private static string GetRandomIntro()
