@@ -1,5 +1,6 @@
 [
     {"Name":"Croutons", "PriceInPence":20},
+    {"Name":"Crouton Crumbs", "PriceInPence":20},
     {"Name":"Flax Seeds", "PriceInPence":20},
     {"Name":"Sesame Seeds", "PriceInPence":20},
     {"Name":"Gherkins", "PriceInPence":30},

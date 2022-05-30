@@ -6,8 +6,8 @@ open FSandwich.Sandwich
 open System
 
 [<Theory>]
-[<InlineData(666, "Smoked Turkey (delicious in a Wholemeal Stottie!)")>]
-[<InlineData(123, "Parma Ham (perfect for Sliced Bread!)")>]
+[<InlineData(666, "Chicken, stuffing, Smoked Cheddar, Pickle (try it in a panini!)")>]
+[<InlineData(123, "Smoked Salmon, WATERCRESS, Radish, hot chilli (try it in a Wrap!)")>]
 let ``Sandwich description`` seed expectedSandwich =
     let rand = new Random(seed)
     let sandwich = make_sandwich rand
@@ -15,8 +15,8 @@ let ``Sandwich description`` seed expectedSandwich =
     description |> should equal expectedSandwich
 
 [<Theory>]
-[<InlineData(666, 270)>]
-[<InlineData(123, 290)>]
+[<InlineData(666, 460)>]
+[<InlineData(123, 405)>]
 let ``Sandwich price`` seed expectedPrice =
     let rand = new Random(seed)
     let sandwich = make_sandwich rand

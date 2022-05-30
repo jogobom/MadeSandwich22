@@ -25,6 +25,6 @@
     {"Name":"Mango Chutney", "PriceInPence":35},
     {"Name":"Mint & Garlic Yoghurt", "PriceInPence":25},
     {"Name":"BBQ Sauce", "PriceInPence":25},
-    {"Name":"Tomato Pesto", "PriceInPence":35},
-    {"Name":"Basil Pesto", "PriceInPence":35}
+    {"Name":"Tomato Pesto", "PriceInPence":40},
+    {"Name":"Basil Pesto", "PriceInPence":40}
 ]

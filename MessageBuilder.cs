@@ -1,22 +1,21 @@
 using System;
 using System.Globalization;
 
-namespace jogobom.MadeSandwich
+namespace jogobom.MadeSandwich;
+
+public static class MessageBuilder
 {
-    public static class MessageBuilder
+    private static readonly string[] PossibleIntros = {"Sotd.", "Sotd:", "Sotd", "SOTD", "SOTD:", "SOTD."};
+
+    public static string Build(string description, int priceInPence)
     {
-        private static readonly string[] PossibleIntros = {"Sotd.", "Sotd:", "Sotd", "SOTD", "SOTD:", "SOTD."};
+        var specificCulture = CultureInfo.CreateSpecificCulture("en-GB");
 
-        public static string Build(string description, int priceInPence)
-        {
-            var specificCulture = CultureInfo.CreateSpecificCulture("en-GB");
+        return $"{GetRandomIntro()} {description} {priceInPence.ToString("C", specificCulture)}";
+    }
 
-            return $"{GetRandomIntro()} {description} {priceInPence.ToString("C", specificCulture)}";
-        }
-
-        private static string GetRandomIntro()
-        {
-            return PossibleIntros[new Random().Next(PossibleIntros.Length)];
-        }
+    private static string GetRandomIntro()
+    {
+        return PossibleIntros[new Random().Next(PossibleIntros.Length)];
     }
 }

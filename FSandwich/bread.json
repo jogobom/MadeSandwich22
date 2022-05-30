@@ -1,26 +1,29 @@
 ﻿[
   {
     "Name": "a White Stottie",
-    "PriceInPence": 200
+    "PriceInPence": 240
   },
   {
     "Name": "a Wholemeal Stottie",
-    "PriceInPence": 200
+    "PriceInPence": 240
   },
   {
     "Name": "a Seeded Stottie",
-    "PriceInPence": 200
+    "PriceInPence": 240
   },
   {
     "Name": "a Baguette",
-    "PriceInPence": 200
+    "PriceInPence": 240
   },
   {
     "Name": "a Panini",
-    "PriceInPence": 200
+    "PriceInPence": 240
   },
   {
     "Name": "Sliced Bread",
-    "PriceInPence": 200
-  }
-]
+    "PriceInPence": 240
+  },
+  {
+    "Name": "a Wrap",
+    "PriceInPence": 240
+  }]

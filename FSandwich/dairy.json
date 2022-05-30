@@ -1,7 +1,7 @@
 [
-    {"Name":"Grated Cheese", "PriceInPence":50},
-    {"Name":"Cottage Cheese", "PriceInPence":50},
-    {"Name":"Cream Cheese", "PriceInPence":50},
+    {"Name":"Grated Cheese", "PriceInPence":55},
+    {"Name":"Cottage Cheese", "PriceInPence":55},
+    {"Name":"Cream Cheese", "PriceInPence":55},
     {"Name":"Egg Mayo", "PriceInPence":60},
     {"Name":"Sliced Egg", "PriceInPence":50},
     {"Name":"Cheese Savoury", "PriceInPence":60},

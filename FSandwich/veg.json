@@ -21,9 +21,9 @@
     {"Name":"Sun Blushed Tomato", "PriceInPence":50},
     {"Name":"Roast Tomato", "PriceInPence":35},
     {"Name":"Mushrooms", "PriceInPence":40},
-    {"Name":"Avocado", "PriceInPence":50},
-    {"Name":"Roast Med Veg", "PriceInPence":50},
-    {"Name":"Roast Peppers", "PriceInPence":50},
+    {"Name":"Avocado", "PriceInPence":60},
+    {"Name":"Roast Med Veg", "PriceInPence":60},
+    {"Name":"Roast Peppers", "PriceInPence":60},
     {"Name":"Baked beans", "PriceInPence":50},
     {"Name":"Pomegranate", "PriceInPence":50}
 ]
