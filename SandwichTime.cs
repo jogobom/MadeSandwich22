@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
+using FSandwich;
 
 namespace jogobom.MadeSandwich;
 
@@ -12,13 +13,16 @@ public class SandwichTime
     {
         log.LogInformation($"SandwichTime trigger function executed at: {DateTime.Now}");
 
-        var generator = new SandwichGenerator();
+        var rand = new Random();
 
-        var sandwich = generator.Generate();
+        var sandwich = Sandwich.make_sandwich(rand);
 
-        var message = MessageBuilder.Build(sandwich);
+        var description = Sandwich.describe(sandwich, rand);
+        var price = Sandwich.price(sandwich);
+
+        var message = MessageBuilder.Build(description, price);
+
         log.LogInformation(message);
-
         await Slack.PostToFood(message);
     }
 }

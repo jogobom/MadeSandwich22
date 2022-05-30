@@ -1,0 +1,6 @@
+[
+    {"Name":"Houmous", "PriceInPence":50},
+    {"Name":"Onion Bhaji", "PriceInPence":75},
+    {"Name":"Veg Samosa", "PriceInPence":75},
+    {"Name":"Meat Samosa", "PriceInPence":80}
+]

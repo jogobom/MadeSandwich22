@@ -1,0 +1,9 @@
+[
+    {"Name":"Tuna", "PriceInPence":80},
+    {"Name":"Tuna Mayo", "PriceInPence":80},
+    {"Name":"Creamy Crab", "PriceInPence":60},
+    {"Name":"Anchovies", "PriceInPence":60},
+    {"Name":"King Prawns", "PriceInPence":115},
+    {"Name":"Smoked Salmon", "PriceInPence":115},
+    {"Name":"Small Prawns", "PriceInPence":115}
+]

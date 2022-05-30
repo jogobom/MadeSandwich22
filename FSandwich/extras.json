@@ -1,0 +1,16 @@
+[
+    {"Name":"Croutons", "PriceInPence":20},
+    {"Name":"Crouton Crumbs", "PriceInPence":20},
+    {"Name":"Flax Seeds", "PriceInPence":20},
+    {"Name":"Sesame Seeds", "PriceInPence":20},
+    {"Name":"Gherkins", "PriceInPence":30},
+    {"Name":"Capers", "PriceInPence":30},
+    {"Name":"Jalapenos", "PriceInPence":30},
+    {"Name":"Walnuts", "PriceInPence":40},
+    {"Name":"Pinenuts", "PriceInPence":50},
+    {"Name":"Mixed Leaf", "PriceInPence":50},
+    {"Name":"Mixed Bean", "PriceInPence":50},
+    {"Name":"Cous Cous", "PriceInPence":50},
+    {"Name":"New Potato", "PriceInPence":50},
+    {"Name":"Pasta", "PriceInPence":50}
+]

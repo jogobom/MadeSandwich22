@@ -1,0 +1,61 @@
+﻿[
+  {
+    "Name": "Ham",
+    "PriceInPence": 60
+  },
+  {
+    "Name": "Beef",
+    "PriceInPence": 60
+  },
+  {
+    "Name": "Cumberland Sausage",
+    "PriceInPence": 60
+  },
+  {
+    "Name": "Bacon",
+    "PriceInPence": 60
+  },
+  {
+    "Name": "Brussels Pate",
+    "PriceInPence": 60
+  },
+  {
+    "Name": "Smoked Ham",
+    "PriceInPence": 70
+  },
+  {
+    "Name": "Italian Salami",
+    "PriceInPence": 70
+  },
+  {
+    "Name": "Chorizo",
+    "PriceInPence": 70
+  },
+  {
+    "Name": "Pastrami",
+    "PriceInPence": 80
+  },
+  {
+    "Name": "Smoked Turkey",
+    "PriceInPence": 80
+  },
+  {
+    "Name": "Chicken",
+    "PriceInPence": 80
+  },
+  {
+    "Name": "Chicken Tikka",
+    "PriceInPence": 85
+  },
+  {
+    "Name": "Turkey",
+    "PriceInPence": 80
+  },
+  {
+    "Name": "Parma Ham",
+    "PriceInPence": 120
+  },
+  { "Name": "Chicken Caesar",
+    "PriceInPence": 90
+  }
+]
