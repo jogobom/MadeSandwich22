@@ -10,8 +10,9 @@ open System
 [<InlineData(123, "Smoked Salmon, WATERCRESS, Radish, hot chilli (try it in a Wrap!)")>]
 let ``Sandwich description`` seed expectedSandwich =
     let rand = new Random(seed)
-    let sandwich = make_sandwich rand
-    let description = describe sandwich rand
+    let json_reader = IO.File.ReadAllText
+    let sandwich = make_sandwich rand json_reader
+    let description = describe sandwich rand json_reader
     description |> should equal expectedSandwich
 
 [<Theory>]
@@ -19,7 +20,8 @@ let ``Sandwich description`` seed expectedSandwich =
 [<InlineData(123, 405)>]
 let ``Sandwich price`` seed expectedPrice =
     let rand = new Random(seed)
-    let sandwich = make_sandwich rand
+    let json_reader = IO.File.ReadAllText
+    let sandwich = make_sandwich rand json_reader
     let pence = price sandwich
     pence |> should equal expectedPrice
     
