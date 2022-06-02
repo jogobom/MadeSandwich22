@@ -21,9 +21,12 @@ public class SandwichTime
             => File.ReadAllText(Path.Combine(context.FunctionAppDirectory, p)));
 
         var sandwich = Sandwich.make_sandwich(rand, reader);
+        log.LogInformation($"Sandwich: {sandwich.ToString()}");
 
         var description = Sandwich.describe(sandwich, rand, reader);
+        
         var price = Sandwich.price(sandwich);
+        log.LogInformation($"Calculated price to be {price} pence");
 
         var message = MessageBuilder.Build(description, price);
 

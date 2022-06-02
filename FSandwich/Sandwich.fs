@@ -42,22 +42,17 @@ module Sandwich =
     let private random_meat rand json_reader =
         random_item "meat.json" rand json_reader |> random_caps rand
 
-
     let private random_nonfilling rand json_reader =
         random_item "nonfilling.json" rand json_reader |> random_caps rand
-
 
     let private random_sauce rand json_reader =
         random_item "sauce.json" rand json_reader |> random_caps rand
 
-
     let private random_seafood rand json_reader =
         random_item "seafood.json" rand json_reader |> random_caps rand
 
-
     let private random_veg rand json_reader =
         random_item "veg.json" rand json_reader |> random_caps rand
-
 
     let private meat_layer (rand:Random) json_reader =
         match rand.Next 100 with
