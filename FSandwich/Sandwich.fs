@@ -10,8 +10,7 @@ module Sandwich =
 
     let private random_caps (rand:Random) ingredient =
         match rand.Next 100 with
-        | r when r <= 5 -> { Name = ingredient.Name.ToUpper(); PriceInPence = ingredient.PriceInPence }
-        | r when r <= 40 -> { Name = ingredient.Name.ToLower(); PriceInPence = ingredient.PriceInPence }
+        | r when r <= 50 -> { Name = ingredient.Name.ToLower(); PriceInPence = ingredient.PriceInPence }
         | _ -> ingredient
 
     let private read_from_json<'T> path json_reader =
