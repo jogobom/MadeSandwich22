@@ -11,7 +11,7 @@ public static class MessageBuilder
     {
         var specificCulture = CultureInfo.CreateSpecificCulture("en-GB");
 
-        return $"{GetRandomIntro()} {description} {priceInPence.ToString("C", specificCulture)}";
+        return $"{GetRandomIntro()} {description} {(priceInPence/100.00).ToString("C", specificCulture)}";
     }
 
     private static string GetRandomIntro()
