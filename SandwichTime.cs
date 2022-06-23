@@ -15,13 +15,14 @@ public class SandwichTime
     {
         log.LogInformation($"SandwichTime trigger function executed at: {DateTime.Now}");
 
-        var rand = new Random();
+        var seed = Environment.TickCount;
+        var rand = new Random(seed);
 
         var reader = FSharpFunc<string,string>.FromConverter((string p)
             => File.ReadAllText(Path.Combine(context.FunctionAppDirectory, p)));
 
         var sandwich = Sandwich.make_sandwich(rand, reader);
-        log.LogInformation($"Sandwich: {sandwich.ToString()}");
+        log.LogInformation($"Sandwich from seed {seed}: {sandwich.ToString()}");
 
         var description = Sandwich.describe(sandwich, rand, reader);
         
