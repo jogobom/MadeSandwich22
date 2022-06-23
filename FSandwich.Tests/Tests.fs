@@ -26,7 +26,24 @@ let ``Sandwich price`` seed expectedPrice =
     pence |> should equal expectedPrice
 
 [<Fact>]
-let ``Pastrami, beetroot, Roast Peppers, CHEESE SAVOURY, ketchup, Pasta (delicious in a baguette!)`` =
+let ``Pastrami, beetroot, Roast Peppers, CHEESE SAVOURY, ketchup, Pasta (delicious in a baguette!)`` () =
     let sandwich = {Bread = {Name = "Baguette"; PriceInPence = 240}; Ingredients = [{Name = "Pastrami"; PriceInPence = 80}; {Name = "Beetroot"; PriceInPence = 30}; {Name = "Roast Peppers"; PriceInPence = 60}; {Name = "CHEESE SAVOURY"; PriceInPence = 60}; {Name = "ketchup"; PriceInPence = 15}; {Name = "Pasta"; PriceInPence = 50}]}
     let pence = price sandwich
     pence |> should equal 535
+
+[<Fact>]
+let ``King Prawns, Apple, spinach, Parmesan, Brown Sauce (perfect for a Seeded(!!?!) NOT A STOTTIE!)`` () =
+    let sandwich = {
+        Bread = {
+            Name = "a Seeded(!!?!) NOT A STOTTIE"; PriceInPence = 240
+        };
+        Ingredients = [
+            {Name = "King Prawns"; PriceInPence = 115};
+            {Name = "Apple"; PriceInPence = 30};
+            {Name = "spinach"; PriceInPence = 15};
+            {Name = "Parmesan"; PriceInPence = 70};
+            {Name = "Brown Sauce"; PriceInPence = 15}
+        ]
+    }
+    let pence = price sandwich
+    pence |> should equal 485
