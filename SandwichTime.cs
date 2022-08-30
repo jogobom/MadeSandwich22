@@ -33,5 +33,6 @@ public class SandwichTime
 
         log.LogInformation(message);
         await Slack.PostToFood(message);
+        await Teams.Post(message);
     }
 }
