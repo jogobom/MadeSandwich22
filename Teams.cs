@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using MessageCards;
 
 namespace jogobom.MadeSandwich;
 
@@ -24,15 +25,10 @@ internal static class Teams
 
     private static async Task Post(string message, string hook)
     {
-        var values = new Dictionary<string, string>
-        {
-            {"@type", "MessageCard"},
-            {"@context", "https://schema.org/extensions"},
-            {"themeColor", "ff00ff"},
-            {"text", message },
-        };
+        var messageCard = new MessageCard("Random sandwich");
+        messageCard.Text = message;
 
-        var content = new StringContent(JsonSerializer.Serialize(values), Encoding.UTF8, "application/json");
+        var content = new StringContent(messageCard.ToJson(), Encoding.UTF8, "application/json");
         await Client.PostAsync(hook, content);
     }
 }
