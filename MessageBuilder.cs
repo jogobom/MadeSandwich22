@@ -1,7 +1,6 @@
-using System;
 using System.Globalization;
 
-namespace jogobom.MadeSandwich;
+namespace MadeSandwich22;
 
 public static class MessageBuilder
 {

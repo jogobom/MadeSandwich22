@@ -1,11 +1,10 @@
-using System.Net.Http;
-using System.Threading.Tasks;
-using System.Text.Json;
 using System.Collections.Generic;
+using System.Net.Http;
 using System.Text;
-using System;
+using System.Text.Json;
+using System.Threading.Tasks;
 
-namespace jogobom.MadeSandwich;
+namespace MadeSandwich22;
 
 internal static class Slack
 {

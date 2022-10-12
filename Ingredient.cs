@@ -1,4 +1,4 @@
-namespace jogobom.MadeSandwich;
+namespace MadeSandwich22;
 
 public class Ingredient
 {

@@ -1,12 +1,10 @@
-using System;
-using System.Threading.Tasks;
-using Microsoft.Azure.WebJobs;
-using Microsoft.Extensions.Logging;
-using FSandwich;
 using System.IO;
+using System.Threading.Tasks;
+using FSandwich;
+using Microsoft.Azure.WebJobs;
 using Microsoft.FSharp.Core;
 
-namespace jogobom.MadeSandwich;
+namespace MadeSandwich22;
 
 public class SandwichTime
 {
@@ -33,6 +31,5 @@ public class SandwichTime
 
         log.LogInformation(message);
         await Slack.PostToFood(message);
-        await Teams.Post(message);
     }
 }

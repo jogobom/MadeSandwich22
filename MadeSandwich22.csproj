@@ -15,6 +15,16 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
+    <None Remove="FSandwich\**" />
+    <None Remove="FSandwich.Tests\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="FSandwich\**" />
+    <Compile Remove="FSandwich.Tests\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="FSandwich\**" />
+    <EmbeddedResource Remove="FSandwich.Tests\**" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="FSandwich\FSandwich.fsproj" />
