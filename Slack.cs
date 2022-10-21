@@ -10,11 +10,6 @@ internal static class Slack
 {
     private static readonly HttpClient Client = new();
 
-    public static async Task PostToChrisP(string message)
-    {
-        await Post(message, Environment.GetEnvironmentVariable("SLACK_CHRISP"));
-    }
-
     public static async Task PostToFood(string message)
     {
         await Post(message, Environment.GetEnvironmentVariable("SLACK_FOOD"));
