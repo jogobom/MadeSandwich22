@@ -57,5 +57,8 @@
   },
   { "Name": "Chicken Caesar",
     "PriceInPence": 90
+  },
+  { "Name": "Doner Meat",
+    "PriceInPence": 150
   }
 ]
